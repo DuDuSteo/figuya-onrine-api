@@ -116,6 +116,7 @@ GEM
       execjs (~> 2.0)
     base64 (0.2.0)
     bcrypt (3.1.20)
+    benchmark (0.4.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.4)
@@ -165,7 +166,7 @@ GEM
       tzinfo
     execjs (2.9.1)
     ffaker (2.23.0)
-    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.1-x86_64-linux-gnu)
     flag-icons-rails (3.4.6.1)
       sass-rails
     flatpickr (4.6.13.1)
@@ -186,8 +187,8 @@ GEM
       concurrent-ruby (~> 1.0)
     i18n_data (0.17.1)
       simple_po_parser (~> 1.1)
-    image_processing (1.13.0)
-      mini_magick (>= 4.9.5, < 5)
+    image_processing (1.14.0)
+      mini_magick (>= 4.9.5, < 6)
       ruby-vips (>= 2.0.17, < 3)
     importmap-rails (2.0.1)
       actionpack (>= 6.0.0)
@@ -226,7 +227,7 @@ GEM
     kaminari-i18n (0.5.0)
       kaminari
       rails
-    logger (1.6.1)
+    logger (1.6.6)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -237,7 +238,9 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
-    mini_magick (4.13.2)
+    mini_magick (5.1.2)
+      benchmark
+      logger
     mini_mime (1.1.5)
     minitest (5.25.1)
     mission_control-jobs (0.3.1)
@@ -347,7 +350,7 @@ GEM
       railties (>= 5.2)
     rexml (3.3.6)
       strscan
-    ruby-vips (2.2.2)
+    ruby-vips (2.2.3)
       ffi (~> 1.12)
       logger
     rubyzip (2.3.2)
@@ -539,7 +542,7 @@ DEPENDENCIES
   capybara
   debug
   dotenv-rails (~> 3.1)
-  image_processing (~> 1.2)
+  image_processing (~> 1.14)
   importmap-rails
   jbuilder
   mission_control-jobs
